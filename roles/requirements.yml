@@ -1,5 +1,8 @@
 ---
-- name: Converge
-  hosts: all
-  roles:
-    - role: ansible-role_sublimetext
+
+collections:
+  - 'namespace.collection'
+  - 'community.crypto'
+
+roles:
+  - src: 'namespace.role'
